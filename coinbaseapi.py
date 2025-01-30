@@ -10,3 +10,8 @@ def get_current_price(productID):
 
     product = client.get_product(productID)    
     return product.price
+<<<<<<< HEAD
+=======
+
+#def get_candles():
+>>>>>>> 55b7e4cf109c8afe2db0f1746cdf567b5bbddb11
