@@ -10,5 +10,3 @@ def get_current_price(productID):
 
     product = client.get_product(productID)    
     return product.price
-
-#def get_candles():

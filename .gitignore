@@ -1,0 +1,5 @@
+.pytrader/
+API_NAME
+API_KEY
+*.sh
+__pycache__
