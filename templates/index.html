@@ -1,10 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Krypto-Trading-Webapp</title>
+  <title>Krypto-Trading-Webapp</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <style>
+    /* Hier kannst du deine eigenen CSS-Regeln hinzufügen */
+    body {
+      font-family: sans-serif;
+    }
+    .container {
+      margin-top: 50px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Aktuelle Kurse</h1>
-    <p>Bitcoin (BTC-USD): {{ btc_price }}</p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <h2>Watchlist</h2>
+      <ul id="watchlist">
+        </ul>
+    </div>
+    <div class="col-md-9">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Aktuelle Kurse</h2>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Kryptowährung</th>
+                <th>Kurs</th>
+                <th>Änderung (24h)</th>
+                <p>Bitcoin (BTC-USD): {{ btc_price }}</p>
+              </tr>
+            </thead>
+            <tbody id="current-prices">
+              </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Chart</h2>
+          <div id="chart"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Historische Daten</h2>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Datum</th>
+                <th>Öffnung</th>
+                <th>Hoch</th>
+                <th>Tief</th>
+                <th>Schluss</th>
+                <th>Volumen</th>
+              </tr>
+            </thead>
+            <tbody id="historical-data">
+              </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Account</h2>
+      <div id="account-area">
+        </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  // Hier wird der JavaScript-Code zum Abrufen und Anzeigen der Daten und zum Erstellen der Charts mit D3.js eingefügt
+</script>
+
 </body>
 </html>
